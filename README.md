@@ -1,4 +1,8 @@
+This repo contains a minimal `Dockerfile` and this README where I record the results of trying to automatically sign commits via the CI pipeline.
+
 # Documentation of manual flow testing
+
+First I'm trying all the steps individually to get a feeling for them & create a deeper understanding of what it means to sign a docker image.
 
 ## Building the docker image
 
