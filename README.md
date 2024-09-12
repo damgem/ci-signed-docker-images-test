@@ -64,6 +64,8 @@ cosign sign --key cosign.key damgem/signed-fortuneteller@sha256:7c86c7e762edd96a
 
 (You may need to accept the agreement terms of the cosign service)
 
+You can also sign with a tag instead the digest, but cosign will warn you that this could potentially lead to signing a different image than intended and that this functionality will be removed in a future release.
+
 #### Verify the signature
 
 Now you can see that a new artifact has been created in the registry. For me it is `damgem/signed-fortuneteller:sha256-7c86c7e762edd96a7c0aa3abfe5c34e2aaa3c4fc3ed73c2b2cdebece8dc95ee6.sig`. The `.sig` indicates that this contains the signature of the docker image with the digest `sha256-7c86c7e762edd96a7c0aa3abfe5c34e2aaa3c4fc3ed73c2b2cdebece8dc95ee6`, which is the container that we just built.
