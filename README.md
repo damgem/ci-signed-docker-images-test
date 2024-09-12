@@ -73,7 +73,7 @@ Now you can see that a new artifact has been created in the registry. For me it 
 You can verify the signature by running:
 
 ```bash
-cosign verify-blob --key cosign.pub damgem/signed-fortuneteller:latest
+cosign verify --key cosign.pub damgem/signed-fortuneteller:latest
 ```
 
 On success you should see:
